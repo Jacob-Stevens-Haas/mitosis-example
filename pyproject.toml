@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "an-example-of-mitosis"
+dynamic = ["version"]
+dependencies = [
+  "numpy",
+  "mitosis",
+]
+
+[tool.mitosis.steps]
+sin_amp = ["sine_experiment:run", "sine_experiment:lookup_dict"]
