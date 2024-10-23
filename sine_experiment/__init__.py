@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-lookup_dict = {"frequency": {"fast": 10, "slow": 1}}
+lookup_dict = {"frequency": {"fast": 9, "slow": 1}}
 
 def run(amplitude, frequency):
     """Deterimne if the maximum value of the sine function equals ``amplitude``"""
